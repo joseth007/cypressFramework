@@ -1,0 +1,11 @@
+CURSO CYPRESS:Master en automatizacion Testr QA de Rodrigo Villanueva Nieto
+
+Bienvenidos al curso de CYPRESS
+
+    1. -npm init
+    2. -npm install cypress --save-dev --> Instalacion
+    3. -Npx instalacion http_//www.npmjs.com/package/npx -->SI ALGO SALE MAL 
+        2.1 -npm install -g npx 
+        2.2 -npm cypress install --force --> Forzar la instalacion de cypress
+    4. -node_modules\.bin\cypress open  -->Abrir Cypress
+    5. -npx cypress open
