@@ -15,6 +15,6 @@ describe("Bienvenido al curso de Cypress seccion 1", ()=>{
 
     it("Abrir Demoqa -> Login", () =>{
         cy.visit("https://demoqa.com/")
-        cy.title().should('eq', 'ToolsQA')
+        cy.title().should('eq', 'DEMOQA')
     })
 })//Cierre de describe
