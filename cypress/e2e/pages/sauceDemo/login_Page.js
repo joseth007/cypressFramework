@@ -5,6 +5,9 @@ class Login_Page_Sauce{
         loginButton: () => cy.get('#login-button'),
         errorMessage: () => cy.get('[data-test="error"]')
     }
+    visit(){
+        cy.visit('https://www.saucedemo.com')
+    }
 
     typeUsername(username){
         this.elements.usernameInput().type(username)
@@ -28,6 +31,5 @@ class Login_Page_Sauce{
         return this.elements.errorMessage
 
     }
-
-
-}export default new Login_Page_Sauce()
+}
+export default new Login_Page_Sauce()
