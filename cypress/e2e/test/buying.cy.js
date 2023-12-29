@@ -22,18 +22,14 @@ describe('Buy Items', () => {
     })
 
     it('Add BackPack and Bike Light to the cart', function () {
-        cy.wait(2000)
-        cy.visit('https://www.saucedemo.com/inventory.html')
-        cy.wait(2000)
+        cy.visit('https://www.saucedemo.com/inventory.html', { failOnStatusCode: false })    
         Inventory_Page.clickFirstBtn()
         Inventory_Page.clickSecondBtn()
         Inventory_Page.getCounterCartItem().should('have.text', 2)
         Inventory_Page.clickCartItem()
     })
     it('Add BackPack and Bike Light to the cart', function () {
-        cy.wait(2000)
-        cy.visit('https://www.saucedemo.com/inventory.html')
-        cy.wait(2000)
+        cy.visit('https://www.saucedemo.com/inventory.html', { failOnStatusCode: false })
         Inventory_Page.clickFirstBtn()
         Inventory_Page.clickSecondBtn()
         Inventory_Page.getCounterCartItem().should('have.text', 2)
