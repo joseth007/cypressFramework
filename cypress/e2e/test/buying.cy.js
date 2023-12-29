@@ -24,15 +24,20 @@ describe('Buy Items', () => {
     it('Add BackPack and Bike Light to the cart', function () {
         cy.visit('https://www.saucedemo.com/inventory.html', { failOnStatusCode: false })    
         Inventory_Page.clickFirstBtn()
+        cy.wait(2000)
         Inventory_Page.clickSecondBtn()
+        cy.wait(2000)
         Inventory_Page.getCounterCartItem().should('have.text', 2)
         Inventory_Page.clickCartItem()
     })
-    it('Add BackPack and Bike Light to the cart', function () {
+    it('Add Bolt t-shirt and Fleece Jacket to the cart', function () {
         cy.visit('https://www.saucedemo.com/inventory.html', { failOnStatusCode: false })
-        Inventory_Page.clickFirstBtn()
-        Inventory_Page.clickSecondBtn()
-        Inventory_Page.getCounterCartItem().should('have.text', 2)
+        cy.wait(2000)
+        Inventory_Page.clickThirdBtn()
+        cy.wait(2000)
+        Inventory_Page.clickFourthBtn()
+        cy.wait(2000)
+        Inventory_Page.getCounterCartItem().should('have.text', 4)
         Inventory_Page.clickCartItem()
     })
 });
