@@ -2,8 +2,8 @@
 //reference displays cypress' functions
 
 import 'cypress-file-upload';
-import Login_Page_Sauce from '../pages/sauceDemo/login_Page';
-import Inventory_Page from '../pages/sauceDemo/inventory_Page'
+import Login_Page_Sauce from '../../pages/sauceDemo/login_Page';
+import Inventory_Page from '../../pages/sauceDemo/inventory_Page'
 require('@4tw/cypress-drag-drop')
 require('cypress-plugin-tab')
 require('cypress-xpath')
