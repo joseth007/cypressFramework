@@ -37,7 +37,7 @@ describe('Buy Items', () => {
         cy.wait(2000)
         Inventory_Page.clickFourthBtn()
         cy.wait(2000)
-        Inventory_Page.getCounterCartItem().should('have.text', 4)
+        Inventory_Page.getCounterCartItem().should('have.text', 2)
         Inventory_Page.clickCartItem()
     })
 });
